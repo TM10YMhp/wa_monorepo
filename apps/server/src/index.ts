@@ -6,7 +6,7 @@ interface InterServerEvents {}
 interface SocketData {}
 
 // const url = "http://localhost:5173"
-const url = "https://wa-client.onrender.com/";
+const url = "https://wa-client.onrender.com";
 
 const io = new Server<
   ClientToServerEvents,
