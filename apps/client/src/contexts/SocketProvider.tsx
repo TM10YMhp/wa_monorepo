@@ -27,9 +27,11 @@ export function SocketProvider({
 }) {
   const [socket, setSocket] =
     useState<Socket<ServerToClientEvents, ClientToServerEvents>>();
+  // const url = "http://localhost:5000"
+  const url = "https://wa-monorepo.onrender.com";
 
   useEffect(() => {
-    const newSocket = io("http://localhost:5000", {
+    const newSocket = io(url, {
       query: { id, name },
     });
     setSocket(newSocket);

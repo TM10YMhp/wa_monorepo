@@ -12,7 +12,7 @@ const io = new Server<
   SocketData
 >(5000, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173", "https://wa-monorepo.onrender.com"],
   },
 });
 
