@@ -1,0 +1,3 @@
+[type-check]
+command=pnpm run type-check
+output=terminal
