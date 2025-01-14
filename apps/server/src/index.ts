@@ -5,6 +5,9 @@ interface InterServerEvents {}
 
 interface SocketData {}
 
+// const url = "http://localhost:5173"
+const url = "https://wa-client.onrender.com/";
+
 const io = new Server<
   ClientToServerEvents,
   ServerToClientEvents,
@@ -12,7 +15,7 @@ const io = new Server<
   SocketData
 >(5000, {
   cors: {
-    origin: ["http://localhost:5173", "https://wa-monorepo.onrender.com"],
+    origin: url,
   },
 });
 
